@@ -1,6 +1,6 @@
 #include <stdio.h>
-int main()
-{
+
+void lightControl(){
     int temp = 0;
     printf("Enter temperature in Celsius:\n");
     scanf("%d",&temp);
@@ -13,5 +13,10 @@ int main()
     else if(temp>15 && temp<30){
         printf("On the light\n");
     }
+}
+int main()
+{
+    lightControl();
+    lightControl();
     return 0;
 }
